@@ -1,0 +1,100 @@
+<html>
+
+<head>
+    <title>Admin Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            overflow: hidden;
+            background-color: #e0f7fa;
+        }
+        
+        .header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            padding: 3px 15px;
+            background-color: #a0c7ef;
+        }
+        
+        .logo img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+        
+        img {
+            width: 80%;
+            margin-top: 5px;
+        }
+        
+        .header ul {
+            list-style: none;
+            margin: 0%;
+            padding-left: 45%;
+            padding-right: 3%;
+            gap: 10px;
+            display: flex;
+        }
+        
+        .header a {
+            text-decoration: none;
+            font-size: 16px;
+            color: black;
+            border-radius: 8px;
+            padding: 10px 15px;
+        }
+        
+        .header a:hover {
+            background-color: lightgray;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 140px auto;
+            background: rgba(255, 255, 255, 0.503);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.182);
+            align-items: center;
+            text-align: center;
+        }
+        
+        .container img {
+            width: 100%;
+            max-width: 400px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="logo.png" alt="Company Logo" width="50" height="50">
+        </div>
+        <ul>
+            <a href="admin_home.html">Home</a>
+            <a href="employee_info.php">Employee Information</a>
+            <a href="pending employee.php">Pending Employee</a>
+            <a href="remove.php">Remove Employee</a>
+            <a href="salary_cal.php">Salary Calculation</a>
+            <a href="home.html" class="logout-button" onclick="logout()">Logout</a>
+        </ul>
+    </div>
+
+    <div class="container">
+        <h3>Welcome to Salary Management System</h3>
+        <p>This is where you can manage your employees and their salaries.</p>
+        <img src="https://media.istockphoto.com/id/494192092/vector/young-office-worker-at-computer.jpg?s=612x612&w=0&k=20&c=hfQT1_gQtUhqvwS0L8Q0rw0R7f0TAvX6RAitIxtzomU=" alt="Office Worker">
+    </div>
+</body>
+
+</html>
